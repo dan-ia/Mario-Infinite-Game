@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Jogo do Mario</title>
+</head>
+
+<body>
+
+    <div class="game-area">
+        <img class="mario" src="./img/mario.gif" alt="">
+        <img class="pipe" src="./img/pipe.png" alt="">
+        <img class="pipe2" src="./img/pipe.png" alt="">
+        <img class="bullet" src="./img/bala.png" alt="">
+        <img class="cloud" src="./img/clouds.png" repeat alt="">
+        <div class="street"></div>
+
+        <button id="reload" class="hidden" onclick="buttonReload()">Reiniciar</button>
+
+    </div>
+
+
+
+
+    <audio id="audioTema" src="./sounds/11a-Overworld.wav" autoplay="autoplay"></audio>
+    <audio id="audioLost" src="./sounds/lost.wav"></audio>
+    <audio id="audioJump" src="./sounds/jump.wav"></audio>
+
+
+
+</body>
+
+<script src="./js/script.js"></script>
+<!-- <script src="./js/audio.js"></script> -->
+
+</html>

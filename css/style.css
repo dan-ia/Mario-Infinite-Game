@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body {
+    background-color: #e0bf78;
+}
+
+.game-area {
+    position: relative;
+
+    width: 100%;
+    height: 100VH;
+
+    margin: 0 auto;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+
+    z-index: 1;
+}
+
+
+.mario {
+    position: absolute;
+    width: 140px;
+    left: 40px;
+    bottom: 180px;
+    /* background-color: black; */
+    z-index: 2;
+}
+
+.jump {
+     animation: jump 500ms ease-out infinite;
+}
+
+.pipe{
+    position: absolute;
+    width: 70px;
+    bottom: 180px;
+    /* left: 63px; */
+    animation: pipe-animation 1.8s linear infinite;
+    z-index: 2;
+}
+
+.pipe2 {
+    position: absolute;
+    width: 70px;
+    bottom: 180px;
+    /* left: 63px; */
+    animation: pipe2-animation 1.2s linear infinite;
+    z-index: 2;
+}
+
+.bullet {
+    position: absolute;
+    width: 70px;
+    bottom: 200px;
+    /* left: 63px; */
+    animation: bullet-animation 2.4s ease-in infinite;
+    z-index: 2;
+}
+
+.street {
+    position: absolute;
+    width: 100000%;
+    height: 100%;
+    margin: auto;
+    
+    background-image: url(../img/chao.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+
+    animation: street 500s linear infinite;
+
+    z-index: 1 ;
+
+}
+
+
+.cloud {
+    position: absolute;
+    width: 1000px;
+    top: 200px;
+    right: -500px;
+    animation: cloud 20s linear infinite;
+    z-index: 2;
+}
+
+
+#reload {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+    top: 100px;
+    left: 42%;
+
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.481);
+
+
+    background-color: rgb(32, 210, 32);
+
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    z-index: 4;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@keyframes jump {
+    0% {
+        bottom: 180;
+    }
+
+    25% {
+        bottom: 280px;
+    }
+
+    50% {
+        bottom: 310px;
+    }
+
+    75% {
+        bottom: 280px;
+    }
+
+    100% {
+        bottom: 180px;
+    }
+
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -100px;
+
+    }
+
+    to {
+        right: 101%;
+    }
+}
+
+@keyframes pipe2-animation {
+    from {
+        right: -110px;
+
+    }
+
+    to {
+        right: 101%;
+    }
+}
+
+
+@keyframes bullet-animation {
+    from {
+        right: -100px;
+
+    }
+
+    to {
+        right: 101%;
+    }
+}
+
+@keyframes cloud {
+    from {
+        right: -1000px;
+
+    }
+
+    to {
+        right: 101%;
+    }
+}
+
+@keyframes street {
+    from {
+        right: -1000000px;
+
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
