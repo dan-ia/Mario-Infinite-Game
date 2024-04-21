@@ -8,12 +8,6 @@
  <p>Mario Infinity Game</p>
 </h1>
 
-<div align="center">
-   <img width="98%" src="./img/tela.gif">
-
-</div>
-
-
 ### 📕 About
 
 Mário Infinity is a 2d game, which jumps over objects, with the aim of getting as far as possible.
@@ -21,6 +15,12 @@ Mário Infinity is a 2d game, which jumps over objects, with the aim of getting 
 It contains the original music while running, and when jumping and hitting an obstacle, the game's characteristic sounds are also played.
 
 I left it at high speed and with obstacles at different speeds to make it more competitive.
+
+#
+
+<div align="center">
+   <img width="98%" src="./img/tela.gif">
+</div>
 
 #
 
@@ -52,21 +52,9 @@ You need to have [Node](https://nodejs.org/en/download), [Git](https://git-scm.c
 
     # Enter directory
     $ cd Mario-Infinite-Game
-````
-````bash
-    # Install the dependencies, if use npm
-    $ npm install
-````
-<p align="center">or</p>
 
-````bash
-    # Install the dependencies, if use yarn
-    $ yarn
-````
-
-```` bash
-     # Open project in VsCode
-     code .
+    # Open project in VsCode
+    code .
 ````
 <div align="center">
 
