@@ -3,6 +3,7 @@
     padding: 0;
     user-select: none;
 }
+
 body {
     background-color: #e0bf78;
 }
@@ -31,10 +32,10 @@ body {
 }
 
 .jump {
-     animation: jump 500ms ease-out infinite;
+    animation: jump 500ms ease-out infinite;
 }
 
-.pipe{
+.pipe {
     position: absolute;
     width: 70px;
     bottom: 180px;
@@ -66,14 +67,14 @@ body {
     width: 100000%;
     height: 100%;
     margin: auto;
-    
+
     background-image: url(../img/chao.png);
     background-repeat: repeat-x;
     background-position: bottom;
 
     animation: street 500s linear infinite;
 
-    z-index: 1 ;
+    z-index: 1;
 
 }
 
@@ -84,7 +85,7 @@ body {
     top: 200px;
     right: -500px;
     animation: cloud 20s linear infinite;
-    z-index: 2;
+    z-index: 1;
 }
 
 
@@ -112,7 +113,7 @@ body {
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 
@@ -194,4 +195,3 @@ body {
         right: 100%;
     }
 }
-
